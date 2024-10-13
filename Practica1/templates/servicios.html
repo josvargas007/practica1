@@ -1,0 +1,54 @@
+{% extends './base.html'%}
+{% block title %} Servicios {% endblock %}
+{% block body%}
+<section class="team_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Nuestros <span> Servicios</span>
+        </h2>
+      </div>
+
+      <div class="team_container justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-sm-6 center">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/static/images/001 (6).jpg" class="img1" alt="100">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mantemimiento Preventivo
+                </h5>
+                <p>
+                  Realizaremos una limpieza de tu equipo.
+                </p>
+                <a href="{{url_for('nota')}}">
+                Leer más
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 center">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/static/images/001 (13).jpg" class="img2" alt="100">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Mantemimiento Corretivo
+                </h5>
+                <p>
+                  Repararemos tu equipo con piezas originales
+                </p>
+                <a href="{{url_for('nota')}}">
+                    Leer más
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock%}

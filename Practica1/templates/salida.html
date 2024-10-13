@@ -1,0 +1,17 @@
+{% extends './base.html'%}
+{% block title %} Mensaje Post {% endblock %}
+{% block body%}
+<h1 style="color:aliceblue"> hola, {{nombre}}</h1>
+    <p style="color:aliceblue">gracias por enviar tus datos</p> <br>
+    <p style="color:aliceblue">estos son los datos que recibimos:
+    </p>
+    <p style="color:aliceblue">Nombre, {{nombre}}</p>
+    <p style="color:aliceblue">Apellidos, {{ap}}</p>
+    <p style="color:aliceblue">Telefono, {{tel}}</p>
+    <p style="color:aliceblue">Correo, {{correo}}</p>
+    <p style="color:aliceblue">Departamento, {{lugar}}</p>
+    <p style="color:aliceblue">Mensaje, {{mensaje}}</p>
+    
+
+    <a href="/"> Volver</a>
+{% endblock%}
